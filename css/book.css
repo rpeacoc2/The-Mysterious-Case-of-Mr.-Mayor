@@ -1,0 +1,40 @@
+	.grid {
+				grid-gap: 1em;
+				margin: 0 0 2em 0;
+
+			}
+
+			.nice-image {
+				width: 100%;
+				height: auto;
+				display: block;
+				position: relative;
+			}
+
+			.book {
+				margin-top: 2em;
+			}
+
+			.book h2 {
+				font-family: Futura;
+				font-weight: bold;
+				font-size: 28pt;
+				text-align: center;
+				color: #FAAE1C;
+			}
+
+			.book-nav {
+				text-align: center;
+			}
+
+			.book-nav img {
+				width: 25%;
+			}
+
+			.book-credits {
+				margin-left: 1em;
+			}
+
+			.book-nav a{
+				background-color: transparent;
+			}

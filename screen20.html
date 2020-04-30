@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Mysterious Case of Mr. Mayor</title>	
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/book.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/grid-utils.css">
+		<link href="https://fonts.googleapis.com/css?family=Anton|Overpass&display=swap" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+
+	</head>
+
+<body>
+	<div class="game-wrapper">
+	<div class="grid book">
+
+	<div class="width-12-12-m width-12-12">
+		<div class="container">
+
+			<div class="notebook">
+				<a id="notebook-link"href=""><img src="images/notebook.png"/></a>
+			</div>
+
+			<div id="notes" class="notes">
+				<img src="images/notes.png" />
+			</div>
+
+		<img class="nice-image" src="images/screen20.png"> 
+		 <form method="get" action="screen21.html">
+    		<button class="btnfive" type="submit">Continue</button>
+		</form>
+	</div>
+</div>
+</div>
+
+		<div id="footer">
+			<div class="width-12-12-m width-12-12">
+			<p>©2020 Rae Peacock | Binghamton University | The Mysterious Case of Mr. Mayor</p>
+		</div>
+		
+		<script>
+			$("#notebook-link, #notes").click(function(){$("#notes").toggleClass("active");return false;});
+		</script>
+
+</body>
+</html>

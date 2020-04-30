@@ -1,0 +1,448 @@
+html {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    text-align: left;
+    margin: 0;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    min-width: 320px;
+    height: 100%;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.grid div {
+  /*background-color:rgba(0,0,0,0.1);*/
+}
+
+.box {
+    
+}
+
+.thumb-box h3, .box h3 {
+  margin-top: 0;
+}
+
+#masthead {
+    background-color: none;
+    padding: 1em;
+    text-align: right;
+}
+
+.aside-holder .box p:last-child {
+    padding-bottom: 1.6em;
+    border-bottom: .75em solid var(--body-color);
+}
+
+#footer {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1em;
+    background-color: var(--lightest-grey);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: 'Anton', monospace;
+}
+h1 {
+  font-size: 2.21em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
+}
+h4 {
+  font-size: 1.125em;
+}
+
+#masthead h4 {
+    margin: 0;
+    font-weight: 300;
+}
+
+#masthead h4 a {
+    color: white;
+    background-color: var(--body-color);
+}
+
+#masthead h4 a:hover {
+    color: var(--link-color) !important;
+}
+
+#aside h2 {
+    margin-top: 0
+}
+
+#aside p {
+    font-size: .95em;
+}
+
+a {
+  white-space: nowrap;
+  transition: color, background-color 0.333s ease-in-out;
+  padding: 0 .5em;
+  color: var(--link-color);
+  background-color: var(--alt-link-color);
+  text-decoration: none;
+}
+
+a:hover {
+    color: var(--alt-link-color) !important;
+    background-color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-color);
+}
+
+.r-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.post {
+  padding: 0em 0em 2em 0em;
+}
+
+.post:first-child {
+  padding-top: .3em;
+}
+
+.post:first-child h1 {
+  margin-top: 0;
+}
+
+.post h1, .overlay h1 {
+  font-style: italic;
+}
+
+.overlay h1 {
+  margin-top: 0;
+}
+
+.post p {
+  clear: both;
+}
+
+.post p.date {
+  margin-top: 0;
+  color: #bbbbbb;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.game-wrapper {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  font-weight: bold;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #332E76;
+  color: #FAAE1C;
+  font-size: 30px;
+  padding: 20px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+@media (max-width: 699px) {
+    .container .btn{
+      font-size: 15px;
+    }
+     .container .choose_bert{
+        position: relative;
+        size: auto;
+    }
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.container .notebook {
+  position: absolute;
+  z-index: 3;
+  width: 77px;
+  top: 9px;
+  left: 7px;
+}
+
+.container .notebook:hover {
+        filter: brightness(130%);
+        -webkit-filter: brightness(130%);
+        -moz-filter: brightness(130%);
+        -o-filter: brightness(130%);
+        -ms-filter: brightness(130%);
+        -webkit-transition: all 0.50s;
+        transition: all 0.20s;
+}
+
+.container .choose_bert {
+  position: absolute;
+  z-index: 10;
+  width: 175px;
+  top: 105px;
+  left: 115px;
+}
+
+.container .choose_bert:hover {
+  filter: brightness(30%);
+}
+
+.container .choose_puff {
+  position: absolute;
+  z-index: 10;
+  width: 175px;
+  top: 105px;
+  left: 400px;
+}
+
+.container .choose_puff:hover {
+  filter: brightness(30%);
+}
+
+.container .choose_doc {
+  position: absolute;
+  z-index: 10;
+  width: 235px;
+  top: 335px;
+  left: 25px;
+}
+
+.container .choose_doc:hover {
+  filter: brightness(30%);
+}
+
+.container .choose_hector {
+  position: absolute;
+  z-index: 10;
+  width: 150px;
+  top: 417px;
+  right: 265px;
+}
+
+.container .choose_hector:hover {
+  filter: brightness(30%);
+}
+
+.container .choose_whiskers {
+  position: absolute;
+  z-index: 10;
+  width: 175px;
+  top: 390px;
+  right: 70px;
+}
+
+.container .choose_whiskers:hover {
+  filter: brightness(30%);
+}
+
+
+.container .notebook:hover {
+        filter: brightness(130%);
+        -webkit-filter: brightness(130%);
+        -moz-filter: brightness(130%);
+        -o-filter: brightness(130%);
+        -ms-filter: brightness(130%);
+        -webkit-transition: all 0.50s;
+        transition: all 0.20s;
+}
+
+.container #notes {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.container .active{
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: visibility, opacity 0.333s ease-in-out;
+}
+
+.container .overlay {
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+}
+
+
+.container .btntwo {
+  position: absolute;
+  font-weight: bolder;
+  top: 60%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #FAAE1C;
+  color: black;
+  font-size: 20px;
+  padding: 20px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.btntwo:hover {
+    background-color: #332E76;
+    color: white;
+}
+
+.btnthree {
+  position: absolute;
+  font-weight: bolder;
+  top: 90%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #FAAE1C;
+  color: black;
+  font-size: 18px;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.btnthree:hover {
+    background-color: #332E76;
+    color: white;
+}
+
+.btnfour {
+  position: absolute;
+  font-weight: bolder;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.btnfour:hover {
+    background-color: #8A0D1F;
+    color: white;
+}
+
+.btnfive {
+  position: absolute;
+  font-weight: bolder;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.btnfive:hover {
+    background-color: #8A0D1F;
+    color: white;
+}
+
+.question1 {
+  position: absolute;
+  font-weight: bolder;
+  top: 25%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 21px;
+  padding: 15px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 300px;
+  height: 100px;
+}
+
+.question1:hover {
+    background-color: #8A0D1F;
+    color: white;
+}
+
+.question2 {
+  position: absolute;
+  font-weight: bolder;
+  top: 45%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 21px;
+  padding: 15px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 300px;
+  height: 100px;
+}
+
+.question2:hover {
+    background-color: #8A0D1F;
+    color: white;
+}
+
